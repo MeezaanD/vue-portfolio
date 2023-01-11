@@ -3,9 +3,14 @@
         <div>
             <h2>Testimonials</h2>
             <NavBar/>
+            <div class="btn-group p-2" role="group" aria-label="Basic outlined example">
+                <a href="#projects" type="button" class="btn btn-outline-dark"><i class="fa-solid fa-arrow-up"></i></a>
+                <a href="#contact" type="button" class="btn btn-outline-dark"><i class="fa-solid fa-arrow-down"></i></a>
+              </div>
         </div>
         <!-- <div class="container">
         </div> -->
+        
     </section>
 </template>
 <script>

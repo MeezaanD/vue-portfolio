@@ -3,6 +3,10 @@
     <section id="resume">
         <div>
             <NavBar/>
+            <div class="btn-group p-2" role="group" aria-label="Basic outlined example">
+                <a href="#about" type="button" class="btn btn-outline-dark"><i class="fa-solid fa-arrow-up"></i></a>
+                <a href="#projects" type="button" class="btn btn-outline-dark"><i class="fa-solid fa-arrow-down"></i></a>
+              </div>
     <div class="wrapper">
         <div class="shape-1"></div>
         <div class="shape-2"></div>
@@ -58,25 +62,14 @@
   <div class="container my-5 border border-2 border-light p-5">
   <div id="words">
     <div class="row">
-      <div class="col-md-6 offset-md-3">
         <h5 style="margin-left: 1.2rem;">Timeline thus far</h5>
+      <div class="col-md-6 offset-md-3" v-for="item in resume" :key="item">
         <ul class="timeline-3">
           <li>
-            <p><b> Highschool</b></p>
-            <p class="float-end text-success">2017-2021</p>
-            <p class="mt-2 text-dark">Graduated from South Peninsula High School 2021.
-            <br>Passed Matric with bachelors</p>
+            <p><b>{{item.institution}}</b> ({{item.year}})</p>
+            <p class="mt-2 text-dark">{{item.description}}</p>
           </li>
-          <li>
-            <p><b>Part-Time course</b></p>
-            <p class="float-end text-success">March 2022-.....</p>
-            <p class="mt-2 text-dark">Done a software developer course part time on IT Academy</p>
-          </li>
-          <li>
-            <p><b>Life Choice Academy</b></p>
-            <p class="float-end text-success">September 2022-......</p>
-            <p class="mt-2 text-dark">Currently a student at Life Choices Academy</p>
-          </li>
+
         </ul>
       </div>
     </div>
@@ -92,6 +85,30 @@ export default {
     name: 'Resume',
     components: {
         NavBar
+    },
+    data() {
+        return {
+            resume : [
+                {
+                    institution: "Highschool",
+                    description: "Graduated from South Peninsula High School 2021.Passed Matric with bachelors",
+                    year: "2017-2021",
+
+                },
+                {
+                    institution: "IT course",
+                    description: "Done a software developer course part time on IT Academy",
+                    year: "March 2022 - current"
+
+                },
+                {
+                    institution: "Life Choice Academy",
+                    description: "Currently a student at Life Choices Academy",
+                    year: "September - current"
+
+                }
+            ]
+        }
     }
 }
 </script>
@@ -121,6 +138,10 @@ export default {
 }
 #words {
   color: black;
+}
+
+h5 {
+    text-align: center;
 }
 
 ul.timeline-3 {

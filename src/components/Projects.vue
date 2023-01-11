@@ -3,6 +3,10 @@
         <div>
             <h2>Projects</h2>
             <NavBar/>
+            <div class="btn-group p-2" role="group" aria-label="Basic outlined example">
+                <a href="#resume" type="button" class="btn btn-outline-dark"><i class="fa-solid fa-arrow-up"></i></a>
+                <a href="#testimonials" type="button" class="btn btn-outline-dark"><i class="fa-solid fa-arrow-down"></i></a>
+              </div>
         </div>
         <!-- <div class="row h-25">
               <div class="card h-100 w-25" v-for="item in arr" :key="item">
@@ -24,26 +28,7 @@
                 </div>
               </div>
             </div> -->
-            <!-- <div class="col-sm-4  mb-3 mb-sm-0 gap-3 p-5">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 gap-3 p-5">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div> -->
-          <!-- </div> -->
-          <div class="card p-5" v-for="item in arr" :key="item">
+          <div class="card w p-5" v-for="item in projects" :key="item">
             <img :src="item.image" style="width: 100%;">
             <h4>{{item.name}}</h4>
             <p>{{item.language}}</p>
@@ -61,7 +46,7 @@ export default {
     },
     data() {
         return {
-     arr : [
+     projects : [
     {
         language: 'HTML & CSS',
         name: 'portfolio',

@@ -1,12 +1,16 @@
 <template>
   <div id="about">
-  <NavBar/>
+  <NavBar/>      
+  <div class="btn-group p-2" role="group" aria-label="Basic outlined example">
+    <a href="#home" type="button" class="btn btn-outline-dark"><i class="fa-solid fa-arrow-up"></i></a>
+    <a href="#resume" type="button" class="btn btn-outline-dark"><i class="fa-solid fa-arrow-down"></i></a>
+  </div>
   <body>
       <div>
         <div class="container">
           <div class="wrapper">
               <div class="text-box">
-                  <img src="https://i.postimg.cc/Jn84rpSg/images.png" alt="">
+                  <img src="https://i.postimg.cc/tRftwSZW/Meezaan.jpg" style="height: 80vh;" alt="">
                   <!-- https://i.postimg.cc/5NdM51tT/profile.png -->
                   <h2>About Me</h2>
                   <p>Hello, my name is Meezaan Davids I am 19 years old, and I was born in Cape Town South Africa. I would like to think I am a genuine straight forward person. I am very interested in learning new skills, whether it is cooking or coding I am very much interested in it. I would also like to consider myself a very passionate sports fan. I try to keep up to date with all my sports. I am really interested in a possible career in web design. At this point in my life I am very into learning new things because new experiences bring new opportunities.</p>
@@ -41,7 +45,7 @@ export default {
 </script>
 <style scoped>
 #about {
-  min-height: 150vh;
+  min-height: 190vh;
   width: 100%;
   background-image: linear-gradient(white, rgb(216, 191, 191));
   color:black
@@ -78,6 +82,6 @@ li {
   border-radius: 10px;
   box-shadow: 0 20px 30px rgba(0,0,0,0.2);
   backdrop-filter: blur(10px);
-  height: 100vh;
+  height: 190vh;
 }
 </style>

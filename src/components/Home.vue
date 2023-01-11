@@ -15,10 +15,11 @@ Home
         </div>
       </div>
     <header>
-  <div class="display-left text-dark" style="padding:48px">
+  <div class="display-left text-dark" style="padding-left:50px;padding-bottom:50px;">
+    <img class="spin" src="https://i.postimg.cc/0jWp1JRy/My-project.png" alt="">
     <h1>Welcome to my Portfolio</h1><br>
     <h4>Aspiring Web Developer</h4><br>
-    <h5>Stop wasting valuable time with projects that just isn't you.</h5><br>
+    <h5>"Stop wasting valuable time with projects that just isn't you."</h5><br>
     <p><button><a href="#about">Get to know me</a></button></p>
     <a class="btn btn-lg btn-floating text-dark" href="https://www.instagram.com/meezaan.davids/" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
     <a class="btn btn-lg btn-floating text-dark" href="https://twitter.com/DavidsMeezaan" target="_blank" role="button"><i class="fab fa-twitter"></i> </a>
@@ -34,11 +35,26 @@ export default {
 </script>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 #home {
   max-height: 1px;
   width: 100%;
 }
+.spin {
+  height:90px;
+  width:90px;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h5 {
+  font-family: 'Quicksand', sans-serif;
+}
+
 li {
   display: inline-flex;
   list-style: none;
@@ -50,15 +66,14 @@ header {
 }
 button {
   background-color: transparent;
-  height: 60px;
-  padding: 10px;
+  height: 30px;
   border-radius: 5px;
   border: none;
   font-family: 'Dancing Script', cursive;
   font-size: larger;
 }
 button:hover {
-  background-color: white;
+  background-color: rgb(216, 191, 191);
   color: black;
 }
 a:link {
