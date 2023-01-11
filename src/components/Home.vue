@@ -19,7 +19,7 @@ Home
     <img class="spin" src="https://i.postimg.cc/0jWp1JRy/My-project.png" alt="">
     <h1>Welcome to my Portfolio</h1><br>
     <h4>Aspiring Web Developer</h4><br>
-    <h5>"Stop wasting valuable time with projects that just isn't you."</h5><br>
+    <h5>"I'll put in some other quote later"</h5><br>
     <p><button><a href="#about">Get to know me</a></button></p>
     <a class="btn btn-lg btn-floating text-dark" href="https://www.instagram.com/meezaan.davids/" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
     <a class="btn btn-lg btn-floating text-dark" href="https://twitter.com/DavidsMeezaan" target="_blank" role="button"><i class="fab fa-twitter"></i> </a>

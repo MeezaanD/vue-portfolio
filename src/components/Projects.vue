@@ -28,13 +28,14 @@
                 </div>
               </div>
             </div> -->
-          <div class="card w p-5" v-for="item in projects" :key="item">
-            <img :src="item.image" style="width: 100%;">
-            <h4>{{item.name}}</h4>
-            <p>{{item.language}}</p>
-            
-            <p><button>Github</button><button>Live</button></p>
-          </div>
+            <div style="display: flex; margin:auto; padding:10px;gap2rem;">
+                <div class="card" v-for="item in projects" :key="item">
+                  <img :src="item.image" style="width: 100%;">
+                  <h4>{{item.name}}</h4>
+                  <p>{{item.language}}</p>
+                  <p><button>Github</button><button>Live</button></p>
+                </div>
+            </div>
     </section>
 </template>
 <script>
@@ -71,6 +72,7 @@ export default {
         github: 'R100',
         live: ''    
     },
+
 ] 
     }
     }

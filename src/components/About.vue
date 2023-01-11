@@ -11,7 +11,6 @@
           <div class="wrapper">
               <div class="text-box">
                   <img src="https://i.postimg.cc/tRftwSZW/Meezaan.jpg" style="height: 80vh;" alt="">
-                  <!-- https://i.postimg.cc/5NdM51tT/profile.png -->
                   <h2>About Me</h2>
                   <p>Hello, my name is Meezaan Davids I am 19 years old, and I was born in Cape Town South Africa. I would like to think I am a genuine straight forward person. I am very interested in learning new skills, whether it is cooking or coding I am very much interested in it. I would also like to consider myself a very passionate sports fan. I try to keep up to date with all my sports. I am really interested in a possible career in web design. At this point in my life I am very into learning new things because new experiences bring new opportunities.</p>
                   <div class="col">
