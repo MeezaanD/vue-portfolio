@@ -1,121 +1,98 @@
 <template>
-    <section id="projects">
-        <div>
-            <h2>Projects</h2>
-            <NavBar/>
+  <section id="projects">
+      <div>
+          <h2>Projects</h2>
+          <NavBar/>
+          <center>
             <div class="btn-group p-2" role="group" aria-label="Basic outlined example">
                 <a href="#resume" type="button" class="btn btn-outline-dark"><i class="fa-solid fa-arrow-up"></i></a>
                 <a href="#testimonials" type="button" class="btn btn-outline-dark"><i class="fa-solid fa-arrow-down"></i></a>
               </div>
-        </div>
-        <!-- <div class="row h-25">
-              <div class="card h-100 w-25" v-for="item in arr" :key="item">
-                  <img :src="item.image" style="width: 100%;height:10rem">
-                  <h4>{{item.product}}</h4> 
-                  <h5>{{item.studio}}</h5>
-                  <p>{{item.github}}</p>
-                  <button class="btn" v-on:click="showAlert">Purchase</button> 
-              </div>
-         </div> -->
-         <h3>HTML & CSS orientated projects</h3>
-         <!-- <div class="row">
-            <div class="col-sm-4 mb-3 mb-sm-0 gap p-5">
-              <div class="card" v-for="item in arr" :key="item">
-                <div class="card-body">
-                <img src="item.image" style="width: 100%;">
-                  <h5 class="card-title">{{item.language}}</h5>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div> -->
-            <div style="display: flex; margin:auto; padding:10px;gap2rem;">
-                <div class="card" v-for="item in projects" :key="item">
-                  <img :src="item.image" style="width: 100%;">
-                  <h4>{{item.name}}</h4>
-                  <p>{{item.language}}</p>
-                  <p><button>Github</button><button>Live</button></p>
-                </div>
+          </center>
+      </div>
+       <h3>My Code Projects</h3>
+      <div class="row">
+        <div class="card" v-for="item in projects" :key="item" style="width: 25rem;height:25rem;margin:auto;">
+            <img :src=item.image class="card-img-top" style="width: 100%;height:15rem;padding:20px;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{item.language}}</h5>
+              <h6>{{item.name}}</h6>
+              <a :href="item.github" target="_blank" type="button" class="btn btn-outline-dark"><i class="fa-brands fa-github"></i></a>
+               <a :href="item.live" target="_blank" type="button" class="btn btn-outline-dark"><i class="fa-brands fa-chrome"></i></a>
             </div>
-    </section>
+          </div>
+    </div>
+  </section>
 </template>
 <script>
 import NavBar from '@/components/NavBar.vue'
 export default {
-    name: 'Projects',
-    components: {
-        NavBar
+  name: 'Projects',
+  components: {
+      NavBar
+  },
+  data() {
+      return {
+   projects : [
+  {
+      language: 'HTML & CSS',
+      name: 'Portfolio',
+      image:"https://i.postimg.cc/mDwG2M4Q/first-Porfolio.png",
+      github: "https://github.com/MeezaanD/Portfolio.git",
+      live: "https://phenomenal-semolina-67d782.netlify.app/"
+  },
+  {
+      language: 'HTML & CSS',
+      name: 'Grid Activity',
+      image: "https://i.postimg.cc/x1tvpfRn/grid.png" ,
+      github: "https://github.com/MeezaanD/Grid-Activity.git",
+      live: "https://gridactivitymeezaan.netlify.app/"
+  },
+  {
+      language: 'HTML & CSS',
+      name: 'Ecommerce',
+      image:"https://i.postimg.cc/rpR1kCSP/ecommerce.png",
+      github: "https://github.com/MeezaanD/Ecommerce-Project.git",
+      live: "https://ecomprojectmeezaan.netlify.app/"
+  },
+  {
+      language: 'HTML, CSS, Javascript',
+      name: 'Point of Sales',
+      image: "https://i.postimg.cc/L5YYzyhk/pos.png",
+      github: "https://github.com/MeezaanD/MD-POS.git",
+      live: "https://meezaanpointofsales.netlify.app"
     },
-    data() {
-        return {
-     projects : [
     {
-        language: 'HTML & CSS',
-        name: 'portfolio',
-        image:"https://i.postimg.cc/L5YYzyhk/pos.png",
-        studio: "DC",
-        github: 'R100',
-        live: ''    
+      language: 'HTML, CSS, Javascript',
+      name: 'Calculator',
+      image: "https://i.postimg.cc/4y5DrRMV/calculator.png",
+      github: "https://github.com/MeezaanD/Calculator-TEST-.git",
+      live: "https://calculator-md240503.netlify.app"
     },
     {
-        language: 'HTML & CSS',
-        name: 'Portfolio',
-        image:"https://i.postimg.cc/mDwG2M4Q/first-Porfolio.png",
-        studio: "Marvel",
-        github: 'R100',
-        live: ''    
-    },
-    {
-        language: 'HTML & CSS',
-        name: 'Ecommerce',
-        image:"https://i.postimg.cc/rpR1kCSP/ecommerce.png",
-        studio: "DC",
-        github: 'R100',
-        live: ''    
-    },
-
-] 
+      language: 'Vue',
+      name: 'Mini-Project',
+      image: "https://i.postimg.cc/prPWhHn1/mini.png",
+      github: "https://github.com/MeezaanD/Mini-Project.git",
+      live: "https://miniprojectmeezaan.netlify.app/"
     }
-    }
+], 
+  }
+  },
 }
 </script>
 <style scoped>
 #projects {
-    height: 180vh;
-    background-image: linear-gradient(white, rgb(216, 191, 191));
-    width: 100%;
-  }
-
-  h3 {
-    text-align: center;
-    padding-top: 20px;
-  }
-
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-    display: flex;
-    height: 40vh;
-    padding: 10px;
-  }
-  
-  
-  .card button {
-    border: none;
-    outline: 0;
-    padding: 10px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    height: 3rem;
-    font-size: 18px;
-  }
-  
-  .card button:hover {
-    opacity: 0.7;
-  }
+  height: 100%;
+  background-image: linear-gradient(white, rgb(216, 191, 191));
+  width: 100%;
+}
+h3 {
+  text-align: center;
+  padding-top: 20px;
+}
+.card button:hover {
+  opacity: 0.7;
+}
 
 </style>

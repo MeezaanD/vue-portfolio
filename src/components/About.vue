@@ -1,10 +1,13 @@
+about
 <template>
   <div id="about">
-  <NavBar/>      
-  <div class="btn-group p-2" role="group" aria-label="Basic outlined example">
+  <NavBar/>
+  <center>
+    <div class="btn-group p-2" role="group" aria-label="Basic outlined example">
     <a href="#home" type="button" class="btn btn-outline-dark"><i class="fa-solid fa-arrow-up"></i></a>
     <a href="#resume" type="button" class="btn btn-outline-dark"><i class="fa-solid fa-arrow-down"></i></a>
   </div>
+  </center>
   <body>
       <div>
         <div class="container">
@@ -55,7 +58,6 @@ body {
   align-items: center;
   align-items: center;
 }
-
 h1 {
   text-align: center;
 }
@@ -82,5 +84,30 @@ li {
   box-shadow: 0 20px 30px rgba(0,0,0,0.2);
   backdrop-filter: blur(10px);
   height: 190vh;
+}
+@media (max-width: 550px) {
+    .container {
+        scale:0.6;
+    }
+}
+@media (max-width: 400px) {
+    .container {
+        scale:0.5;
+    }
+}
+@media (max-width: 300px) {
+    .container {
+        scale:0.4;
+    }
+}
+@media (max-width: 250px) {
+    .container {
+        scale:0.3;
+    }
+}
+@media (max-width: 100px) {
+    .container {
+        scale:0.2;
+    }
 }
 </style>

@@ -1,12 +1,15 @@
+resume
 <template>
     <body>
     <section id="resume">
         <div>
             <NavBar/>
-            <div class="btn-group p-2" role="group" aria-label="Basic outlined example">
+            <center>
+                <div class="btn-group p-2" role="group" aria-label="Basic outlined example">
                 <a href="#about" type="button" class="btn btn-outline-dark"><i class="fa-solid fa-arrow-up"></i></a>
                 <a href="#projects" type="button" class="btn btn-outline-dark"><i class="fa-solid fa-arrow-down"></i></a>
               </div>
+            </center>
     <div class="wrapper">
         <div class="shape-1"></div>
         <div class="shape-2"></div>
@@ -69,7 +72,6 @@
             <p><b>{{item.institution}}</b> ({{item.year}})</p>
             <p class="mt-2 text-dark">{{item.description}}</p>
           </li>
-
         </ul>
       </div>
     </div>
@@ -93,19 +95,16 @@ export default {
                     institution: "Highschool",
                     description: "Graduated from South Peninsula High School 2021.Passed Matric with bachelors",
                     year: "2017-2021",
-
                 },
                 {
                     institution: "IT course",
                     description: "Done a software developer course part time on IT Academy",
                     year: "March 2022 - current"
-
                 },
                 {
                     institution: "Life Choice Academy",
                     description: "Currently a student at Life Choices Academy",
                     year: "September - current"
-
                 }
             ]
         }
@@ -136,14 +135,37 @@ export default {
     box-shadow: 0 20px 30px rgba(0,0,0,0.2);
     backdrop-filter: blur(10px);
 }
+@media (max-width: 550px) {
+    .container {
+        scale:0.6;
+    }
+}
+@media (max-width: 400px) {
+    .container {
+        scale:0.5;
+    }
+}
+@media (max-width: 300px) {
+    .container {
+        scale:0.4;
+    }
+}
+@media (max-width: 250px) {
+    .container {
+        scale:0.3;
+    }
+}
+@media (max-width: 100px) {
+    .container {
+        scale:0.2;
+    }
+}
 #words {
   color: black;
 }
-
 h5 {
     text-align: center;
 }
-
 ul.timeline-3 {
   list-style-type: none;
   position: relative;
