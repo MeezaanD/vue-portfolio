@@ -46,6 +46,8 @@ export default {
 }
 </script>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 #contact {
   height: 140vh;
   width: 100%;
@@ -53,9 +55,15 @@ export default {
 * {
   box-sizing: border-box;
 }
-h2, h3, h6, p {
+h2, h3, p {
   text-align: center;
   color: black;
+}
+
+h6 {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
 }
 .contact-img {
   background-image: linear-gradient(white, rgb(216, 191, 191));

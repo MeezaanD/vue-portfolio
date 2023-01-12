@@ -17,10 +17,6 @@
                   </div>
               </div>
             </div>
-            <!-- <div class="btn-group" role="group" aria-label="Basic outlined example">
-              <a href="" type="button" class="btn btn-outline-primary"><i class="fa-solid fa-arrow-up"></i></a>
-              <a href="" type="button" class="btn btn-outline-primary"><i class="fa-solid fa-arrow-down"></i></a>
-            </div> -->
     </div>
 </template>
 

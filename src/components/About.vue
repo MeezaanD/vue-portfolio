@@ -10,6 +10,7 @@ about
   </center>
   <body>
       <div>
+        <h2>About</h2>
         <div class="container">
           <div class="wrapper">
               <div class="text-box">
@@ -47,7 +48,7 @@ export default {
 </script>
 <style scoped>
 #about {
-  min-height: 190vh;
+  height: 100%;
   width: 100%;
   background-image: linear-gradient(white, rgb(216, 191, 191));
   color:black
@@ -83,31 +84,7 @@ li {
   border-radius: 10px;
   box-shadow: 0 20px 30px rgba(0,0,0,0.2);
   backdrop-filter: blur(10px);
-  height: 190vh;
+  height: auto;
 }
-@media (max-width: 550px) {
-    .container {
-        scale:0.6;
-    }
-}
-@media (max-width: 400px) {
-    .container {
-        scale:0.5;
-    }
-}
-@media (max-width: 300px) {
-    .container {
-        scale:0.4;
-    }
-}
-@media (max-width: 250px) {
-    .container {
-        scale:0.3;
-    }
-}
-@media (max-width: 100px) {
-    .container {
-        scale:0.2;
-    }
-}
+
 </style>

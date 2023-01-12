@@ -1,7 +1,6 @@
 <template>
   <section id="projects">
-      <div>
-          <h2>Projects</h2>
+      <div> 
           <NavBar/>
           <center>
             <div class="btn-group p-2" role="group" aria-label="Basic outlined example">
@@ -10,15 +9,20 @@
               </div>
           </center>
       </div>
-       <h3>My Code Projects</h3>
+      <h2>Projects</h2>
+      <h4>My Projects have thus far consisted of HTML, CSS, Javascript</h4>
       <div class="row">
-        <div class="card" v-for="item in projects" :key="item" style="width: 25rem;height:25rem;margin:auto;">
+        <div class="card" v-for="item in projects" :key="item" style="width: 25rem;height:25rem;margin:auto;background-color:transparent;">
             <img :src=item.image class="card-img-top" style="width: 100%;height:15rem;padding:20px;" alt="...">
             <div class="card-body">
+              <center>
               <h5 class="card-title">{{item.language}}</h5>
               <h6>{{item.name}}</h6>
-              <a :href="item.github" target="_blank" type="button" class="btn btn-outline-dark"><i class="fa-brands fa-github"></i></a>
-               <a :href="item.live" target="_blank" type="button" class="btn btn-outline-dark"><i class="fa-brands fa-chrome"></i></a>
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <a :href="item.github" target="_blank" type="button" class="btn btn-outline-dark"><i class="fa-brands fa-github"></i></a>
+                <a :href="item.live" target="_blank" type="button" class="btn btn-outline-dark"><i class="fa-brands fa-chrome"></i></a>
+               </div>
+              </center>
             </div>
           </div>
     </div>
@@ -50,7 +54,7 @@ export default {
   },
   {
       language: 'HTML & CSS',
-      name: 'Ecommerce',
+      name: 'Ecommerce Website',
       image:"https://i.postimg.cc/rpR1kCSP/ecommerce.png",
       github: "https://github.com/MeezaanD/Ecommerce-Project.git",
       live: "https://ecomprojectmeezaan.netlify.app/"
@@ -64,7 +68,7 @@ export default {
     },
     {
       language: 'HTML, CSS, Javascript',
-      name: 'Calculator',
+      name: 'Calculator App',
       image: "https://i.postimg.cc/4y5DrRMV/calculator.png",
       github: "https://github.com/MeezaanD/Calculator-TEST-.git",
       live: "https://calculator-md240503.netlify.app"
@@ -87,6 +91,12 @@ export default {
   background-image: linear-gradient(white, rgb(216, 191, 191));
   width: 100%;
 }
+
+h4 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 h3 {
   text-align: center;
   padding-top: 20px;

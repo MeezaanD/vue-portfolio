@@ -5,12 +5,12 @@ Home
       <div class="nav-container">
         <div class="btn-group" role="group" aria-label="Basic outlined example">
           <ul>
-            <li><a href="#home" class="btn text-light">Home</a></li>
-            <li><a href="#about" class="btn text-light">About</a></li>
-            <li><a href="#resume" class="btn text-light">Resume</a></li>
-            <li><a href="#projects" class="btn text-light">Projects</a></li>
-            <li><a href="#testimonials" class="btn text-light">Testimonials</a></li>
-            <li><a href="#contact" class="btn text-light">Contact</a></li>
+            <li><a href="#home" class="btn text-dark" style="font-size: large;">Home</a></li>
+            <li><a href="#about" class="btn text-dark" style="font-size: large;" >About</a></li>
+            <li><a href="#resume" class="btn text-dark" style="font-size: large;">Resume</a></li>
+            <li><a href="#projects" class="btn text-light" style="font-size: large;">Projects</a></li>
+            <li><a href="#testimonials" class="btn text-light" style="font-size: large;">Testimonials</a></li>
+            <li><a href="#contact" class="btn text-light" style="font-size: large;">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -39,7 +39,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 #home {
-  max-height: 1px;
+  height: 100%;
   width: 100%;
 }
 .spin {
@@ -80,15 +80,15 @@ a:link {
   text-decoration: none;
   color: black;
 }
-/* visited link */
+
 a:visited {
   text-decoration: none;
 }
-/* mouse over link */
+
 a:hover {
   text-decoration: none;
 }
-/* selected link */
+
 a:active {
   text-decoration: none;
 }
@@ -123,7 +123,5 @@ a:active {
   margin: 0;
   padding: 0;
 }
-#home {
-  height: 1px;
-}
+
 </style>
